@@ -32,7 +32,7 @@ const navOptions = [
 
 const Sidebar = () => {
   return (
-    <div className="w-[20vw] bg-gradient-to-b from-[#1158DA] to-[#002569] flex flex-col items-center justify-between">
+    <div className="hidden w-[30%] bg-gradient-to-b from-[#1158DA] to-[#002569] lg:flex flex-col items-center justify-between">
       <div className="flex flex-col items-center w-full">
         <div className="flex gap-1 items-center">
           <img src={Logo} alt="" className="h-12 w-12 object-contain my-1" />
@@ -52,12 +52,12 @@ const Sidebar = () => {
           ))}
         </div>
       </div>
-      <div className="">
+      <div className="flex flex-col gap-4 items-center">
         <BuyNowSection />
-      </div>
-      <div className="mb-6 flex w-[80%] gap-2 items-center rounded-md hover:bg-[#3771DD] cursor-pointer p-2">
-        <img src={LogoutIcon} alt="" className="h-7 w-7 object-contain" />
-        <span className="text-white">Logout</span>
+        <div className="mb-6 flex w-[80%] gap-2 items-center rounded-md hover:bg-[#3771DD] cursor-pointer p-2">
+          <img src={LogoutIcon} alt="" className="h-7 w-7 object-contain" />
+          <span className="text-white">Logout</span>
+        </div>
       </div>
     </div>
   );
