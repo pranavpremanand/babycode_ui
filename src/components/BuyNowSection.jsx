@@ -19,12 +19,12 @@ const BuyNowSection = () => {
         <div className="flex flex-col gap-2 mt-3 font-medium">
           {content.map((content) => (
             <div
-              className="flex gap-2 text-[.75rem] text-[#717171]"
+              className="flex gap-2 text-md lg:text-[.80rem] text-[#717171]"
               key={content}
             >
               <img
                 src={TickIcon}
-                className="w-[.9rem] h-[.9rem] object-contain mt-[.20rem]"
+                className="w-[1.1rem] h-[1.1rem] lg:w-[.9rem] lg:h-[.9rem] object-contain mt-[.20rem]"
                 alt=""
               />
               <span>{content}</span>
@@ -33,7 +33,7 @@ const BuyNowSection = () => {
         </div>
       </div>
       <div className="flex justify-between mt-4 pb-4 font-medium items-center w-full">
-        <span className="text-[.75rem] ml-4">Only @ ₹ 299</span>
+        <span className=" text-md lg:text-[.80rem] ml-4">Only @ ₹ 299</span>
         <button className="text-white bg-[#1158DA] flex py-2 px-3 text-sm gap-2 rounded-s-full">
           Buy Now <img src={ArrowIcon} className="w-5 h-5" alt="" />
         </button>
